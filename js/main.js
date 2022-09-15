@@ -15,7 +15,7 @@ const getData = async (year, round) => {
 
 getData(2020, 1);
 
-const create_rows = (pos, fname, lname, url, nat, spon, pts) => {
+const create_rows = (pos, fname, lname, url, nat, spon, wins, pts) => {
   //clears data
   const html = `<div class="row" id="driver-row">
             <div class="col">${pos}</div>
@@ -23,6 +23,8 @@ const create_rows = (pos, fname, lname, url, nat, spon, pts) => {
             <a href="${url}">${fname} ${lname}</a></div>
             <div class="col">${nat}</div>
             <div class="col">${spon}</div>
+            <div class="col">${wins}</div>
+
             <div class="col">${pts}</div>
           </div>`;
   document.querySelector("#driver-rows").insertAdjacentHTML("beforeend", html);
@@ -38,6 +40,8 @@ const load_data = async (y, r) => {
       driver.Driver.url,
       driver.Driver.nationality,
       driver.Constructors[0].name,
+      driver.wins,
+
       driver.points
     )
   );
