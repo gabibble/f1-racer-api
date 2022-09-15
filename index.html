@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="/js/main.js" defer></script>
+    <title>Vroom Vroom</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-4">F1 RACING API 🏁</h1>
+      <form class="row d-flex justify-content-center mb-4" id="yearform">
+        <div class="col-4">
+          <input
+            type="text"
+            class="form-control"
+            id="year"
+            placeholder="Year"
+          />
+        </div>
+
+        <div class="col-4">
+          <input
+            type="text"
+            class="form-control"
+            id="round"
+            placeholder="Round"
+          />
+        </div>
+        <button type="submit" class="btn btn-info col-2 ms-3">GO!</button>
+      </form>
+
+      <h4 id="table-heading">Displaying data for year 2022 round 1</h4>
+      <div class="standings-table">
+        <div class="standings-table-header">
+          <div class="row header">
+            <div class="col">Position</div>
+            <div class="col">Name</div>
+            <div class="col">Nationality</div>
+            <div class="col">Sponsor</div>
+            <div class="col">Points</div>
+          </div>
+        </div>
+        <div id="driver-rows"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

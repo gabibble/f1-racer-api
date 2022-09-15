@@ -1,0 +1,61 @@
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  background: radial-gradient(
+    circle at -0.2% 99.7%,
+    rgb(190, 53, 145) 0%,
+    rgb(239, 69, 115) 100.2%
+  );
+}
+form {
+  min-width: 600px;
+  /* margin: auto;
+ padding: auto; */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 72px;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.standings-table-header {
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.standings-table {
+  background-color: rgba(0, 0, 0, 0.499);
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 18px;
+  min-width: 1000px;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(131, 255, 255);
+}
+
+.header,
+#driver-row {
+  display: flex;
+  justify-content: center;
+}
